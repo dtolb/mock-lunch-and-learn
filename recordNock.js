@@ -1,7 +1,8 @@
 var request = require("request");
 var nock = require("nock");
-var randomstring = require("randomstring");
-var Q = require("q");
 
 nock.recorder.rec();
+
+request.get("http://www.github.com");
+request.get("http://www.dtolb.com");
 
